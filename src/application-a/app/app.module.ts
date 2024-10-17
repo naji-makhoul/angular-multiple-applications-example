@@ -20,9 +20,9 @@ import { RouteDataExampleComponent } from '../../global/routed-data-example.comp
     NavbarComponent,
     HomeComponent
   ],
-  entryComponents: [
-    NavbarComponent
-  ],
+  // entryComponents: [
+  //   NavbarComponent
+  // ],
   imports: [
     BrowserModule,
     GlobalModule,

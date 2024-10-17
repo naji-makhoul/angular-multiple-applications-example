@@ -48,18 +48,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "multi-application-example:build"
+            "buildTarget": "multi-application-example:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "multi-application-example:build:production"
+              "buildTarget": "multi-application-example:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "multi-application-example:build"
+            "buildTarget": "multi-application-example:build"
           }
         },
         "test": {
@@ -163,18 +163,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "multi-application-example1:build"
+            "buildTarget": "multi-application-example1:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "multi-application-example1:build:production"
+              "buildTarget": "multi-application-example1:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "multi-application-example1:build"
+            "buildTarget": "multi-application-example1:build"
           }
         },
         "test": {
@@ -234,8 +234,7 @@
       }
     }
   },
-  "defaultProject": "multi-application-example",
-  "schematics": {
+   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
       "styleext": "css"
@@ -243,5 +242,8 @@
     "@schematics/angular:directive": {
       "prefix": "app"
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
